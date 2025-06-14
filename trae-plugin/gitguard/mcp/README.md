@@ -43,8 +43,7 @@ The result will be a JSON string listing any detected secrets.
 ## Demonstration
 
 Here is the link to the demonstration of building GitGuardAI by using our own MCP Server in TraeIDE:
-https://www.youtube.com/watch?v=oneoIc5QmnY
-
+https://www.youtube.com/@user-fj8et6iw5y/playlists
 
 ## Secret Detection Patterns
 - API Keys
@@ -52,3 +51,11 @@ https://www.youtube.com/watch?v=oneoIc5QmnY
 - Mnemonics
 - Stripe API Keys
 Detection uses regex patterns and, if configured, can leverage Novita LLM for advanced detection.
+
+## Running with Docker
+
+You can also run the MCP server using Docker:
+```bash
+docker pull yebhonelin102273442/gitguardai
+docker run -it -v "Your Claude Root Path:/root/.config/Claude" yebhonelin102273442/gitguardai      
+```
